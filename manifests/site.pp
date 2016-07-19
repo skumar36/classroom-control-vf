@@ -48,7 +48,6 @@ file { '/etc/motd':
   ensure => file,
   owner  => 'root',
   group  => 'root',
-  mode   => '0440',
-  content => 'Managing file permissions',
+  mode   => '0777',
   }
 }
