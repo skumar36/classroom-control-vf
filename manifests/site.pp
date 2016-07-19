@@ -49,6 +49,6 @@ file { '/etc/motd':
   owner  => 'root',
   group  => 'root',
   mode   => '0440',
-  content => "Managing file permissions/n",
+  content => 'Managing file permissions',
 }
 }
