@@ -50,4 +50,5 @@ file { '/etc/motd':
   group  => 'root',
   mode   => '0440',
   content => 'Managing file permissions',
+  }
 }
