@@ -51,4 +51,3 @@ file { '/etc/motd':
   mode   => '0440',
   content => 'Managing file permissions',
 }
-}
