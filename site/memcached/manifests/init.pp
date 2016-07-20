@@ -7,6 +7,8 @@ package { 'memcached':
   file { '/etc/sysconfig/memcached':
     ensure  => file,
     source  => '/tmp/memcached',
+    require  => Package['memcached'],
+    notify => Service['memchached'],
     }
     
     service { 'memcached':
