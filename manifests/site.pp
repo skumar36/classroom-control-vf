@@ -47,3 +47,7 @@ node default {
 exec { 'create  /etc/motd':
 command  => "/usr/local/bin/cowsay 'Welcome to ${::fqdn}!' > /etc/motd",
 }
+
+include users
+
+}
