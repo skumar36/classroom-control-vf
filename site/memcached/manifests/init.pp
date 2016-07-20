@@ -8,7 +8,7 @@ package { 'memcached':
     ensure  => file,
     source  => '/tmp/memcached',
     require  => Package['memcached'],
-    notify => Service['memchached'],
+    notify => Service['memcached'],
     }
     
     service { 'memcached':
