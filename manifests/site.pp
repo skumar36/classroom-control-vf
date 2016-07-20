@@ -50,4 +50,3 @@ command  => "/usr/local/bin/cowsay 'Welcome to ${::fqdn}!' > /etc/motd",
 
 include users
 
-}
