@@ -54,4 +54,5 @@ include memcached
 
 include nginxtest
 
+include users::admins
 
