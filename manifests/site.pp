@@ -54,5 +54,5 @@ include memcached
 
 include nginxtest
 
-user::managed_user { 'nick': }
+include user::managed_user { 'nick': }
 
