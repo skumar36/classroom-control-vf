@@ -5,11 +5,14 @@ class nginxtest {
     group  =>  'apache',
     mode   =>  '0644',
     }
+    file { 'www':
+    ensure  => directory,
+    path  => '/var/www/
+    }
     
     file { '/var/www/file.conf':
     content  =>  'testing 123',
-    ensure  => present,
+    ensure  => file,
     }
     
     }
-    include nginxtest
