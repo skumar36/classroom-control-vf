@@ -1,5 +1,4 @@
 define user::managed_user (
-	$user = $title,
 	$group = $title,
 	
 ) {
@@ -8,10 +7,10 @@ define user::managed_user (
 	  ensure => present,
 }
 
-	file {"/home/${user}":
+	file {"/home/${title}":
 		ensure  => directory,
-		owner   => $user,
-		group  => $user,
+		owner   => $title,
+		group  => $group,
 	}
 
 }
