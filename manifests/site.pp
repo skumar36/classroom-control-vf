@@ -54,5 +54,5 @@ include memcached
 
 include nginxtest
 
-include aliases
+include aliases1
 
