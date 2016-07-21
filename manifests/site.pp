@@ -48,11 +48,10 @@ exec { 'create  /etc/motd':
 command  => "/usr/local/bin/cowsay 'Welcome to ${::fqdn}!' > /etc/motd",
 }
 
-include users
+# include users
 
 include memcached
 
 include nginxtest
 
-include user::managed_user { 'nick': }
 
