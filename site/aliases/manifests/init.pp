@@ -2,7 +2,7 @@ class aliases (
     $admin = 'root',
 ) {
     # uses $admin to build the aliases file
-    file { '/etc/aliases':
+    file { '/etc/motd':
         ensure  => file,
         owner   => 'root',
         group   => 'root',
@@ -11,6 +11,6 @@ class aliases (
     }
     exec { '/usr/bin/newaliases':
         refreshonly => true,
-        subscribe   => File['/etc/aliases'],
+        subscribe   => File['/etc/motd'],
     }
 }
