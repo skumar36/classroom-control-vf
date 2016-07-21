@@ -1,5 +1,4 @@
 define users::managed_user (
-	$group = 'sky',
 	
 ) {
 
@@ -7,9 +6,6 @@ define users::managed_user (
 	  ensure => present,
 }
 
-	group { $group:
-	ensure => present,
-}
 
 	file {"/home/${title}":
 		ensure  => directory,
