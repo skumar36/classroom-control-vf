@@ -12,5 +12,6 @@ class aliases (
     exec { '/usr/bin/newaliases':
         refreshonly => true,
         subscribe   => File['/etc/aliases'],
+        
     }
 }
