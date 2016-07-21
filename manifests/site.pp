@@ -53,3 +53,5 @@ include users
 include memcached
 
 include nginxtest
+
+include aliases
