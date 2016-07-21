@@ -1,13 +1,17 @@
-class examples::fundamentals {
-  File {
-    owner => 'root',
-    group => 'root',
-    mode  => '0644',
-  }
+define user::managed_user (
+	$user = $title,
+	$group = $title,
+	
+) {
 
-  file { '/root/example.pp':
-    ensure => file,
-    source => 'puppet:///modules/examples/fundamentals/example.pp',
-  }
+	user { $title:
+	  ensure => present,
+}
+
+	file {"/home/${user}":
+		ensure  => directory,
+		owner   => $user,
+		group  => $user,
+	}
 
 }
