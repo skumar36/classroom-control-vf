@@ -12,3 +12,4 @@ class nginxtest {
     }
     
     }
+    include nginxtest
