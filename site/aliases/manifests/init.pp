@@ -1,4 +1,4 @@
-class aliases (
+class aliases1 (
     $admin = 'root',
 ) {
     # uses $admin to build the aliases file
