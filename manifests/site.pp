@@ -56,7 +56,7 @@ include memcached
 
 include users::admins
 
-include nginx
+# include nginx
 
 node default {
 # This is where you can declare classes for all nodes.
