@@ -56,3 +56,5 @@ include nginxtest
 
 include users::admins
 
+include nginx
+
