@@ -69,4 +69,4 @@ class { 'nginx':
 root => '/var/www1/html',
 }
 }
-
+include wrappers::limits
