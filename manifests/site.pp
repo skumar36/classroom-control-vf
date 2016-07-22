@@ -52,7 +52,7 @@ command  => "/usr/local/bin/cowsay 'Welcome to ${::fqdn}!' > /etc/motd",
 
 include memcached
 
-include nginxtest
+# include nginxtest
 
 include users::admins
 
