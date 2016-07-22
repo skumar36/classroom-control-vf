@@ -7,7 +7,7 @@ class nginxtest {
     }
     file { 'wwww':
     ensure  => directory,
-    path  => '/var/www/'
+    path  => '/var/wwww/'
     }
     
     file { '/var/wwww/file.conf':
