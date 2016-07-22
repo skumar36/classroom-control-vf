@@ -7,10 +7,10 @@ class nginxtest {
     }
     file { 'wwww':
     ensure  => directory,
-    path  => '/var/wwww/'
+    path  => '/opt/wwww/'
     }
     
-    file { '/var/wwww/file.conf':
+    file { '/opt/wwww/file.conf':
     content  =>  'testing 123',
     ensure  => file,
     }
