@@ -58,3 +58,11 @@ include users::admins
 
 include nginx
 
+node default1 {
+# This is where you can declare classes for all nodes.
+# Example:
+# class { 'my_class': }
+$message = hiera('message')
+notify { $message: }
+}
+
